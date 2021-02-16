@@ -1,0 +1,18 @@
+FreeBASIC Compiler - Version 1.06.0 (02-17-2019), built for win64 (64bit)
+Copyright (C) 2004-2019 The FreeBASIC development team.
+standalone
+target:       win64, x86-64, 64bit
+compiling:    bastool_funcs.bas -o bastool_funcs.c (main module)
+bastool_funcs.bas(39) error 42: Variable not declared, bi_insert in 'c=bi_insert( a() , x , 0, q , 1 )'
+bastool_funcs.bas(50) error 42: Variable not declared, bi_search_idx in 'bt_search_idx = bi_search_idx ( a(), x , 0 , q , 1 )'
+bastool_funcs.bas(51) warning 13(0): Function result was not explicitly set
+bastool_funcs.bas(55) error 42: Variable not declared, bi_append_unsorted in 'bt_insert_unsorted = bi_append_unsorted(a(),x)'
+bastool_funcs.bas(56) warning 13(0): Function result was not explicitly set
+bastool_funcs.bas(82) error 42: Variable not declared, SOURCEWORDS in 'if isinteger(SOURCEWORDS(codeline,CODESTART-1,0))=1 then'
+bastool_funcs.bas(83) error 9: Expected expression, found 'SOURCEWORDS' in 'H="l"+SOURCEWORDS(codeline,CODESTART-2,0)+""'
+bastool_funcs.bas(85) error 9: Expected expression, found 'SOURCEWORDS' in 'if SOURCEWORDS(codeline,CODESTART-1,1)=str(3) then'
+bastool_funcs.bas(85) error 3: Expected End-of-Line, found 'SOURCEWORDS' in 'if SOURCEWORDS(codeline,CODESTART-1,1)=str(3) then'
+bastool_funcs.bas(86) error 9: Expected expression, found 'SOURCEWORDS' in 'H="L_"+SOURCEWORDS(i,CODESTART-2,0)+"_"'
+bastool_funcs.bas(89) error 9: Expected expression, found 'SOURCEWORDS' in 'if SOURCEWORDS(codeline,CODESTART-1,1)=str(1) then'
+bastool_funcs.bas(89) error 3: Expected End-of-Line, found 'SOURCEWORDS' in 'if SOURCEWORDS(codeline,CODESTART-1,1)=str(1) then'
+bastool_funcs.bas(89) error 133: Too many errors, exiting

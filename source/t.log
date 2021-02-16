@@ -1,0 +1,22 @@
+"C:\FREEBASIC\X64\fbc.exe" -x "C:\FREEBASIC\PROJECTS\BASTOOL\source\t.exe" -s console -v t.bas > t.log 2>&1
+
+
+FreeBASIC Compiler - Version 1.08.0 (2020-05-04), built for win64 (64bit)
+Copyright (C) 2004-2019 The FreeBASIC development team.
+standalone
+target:       win64, x86-64, 64bit
+backend:      gcc
+compiling:    t.bas -o t.c (main module)
+compiling C:  C:\FREEBASIC\X64\bin\win64\gcc.exe -m64 -march=x86-64 -S -nostdlib -nostdinc -Wall -Wno-unused-label -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -Wno-main -Werror-implicit-function-declaration -O0 -fno-strict-aliasing -frounding-math -fno-math-errno -fwrapv -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -Wno-format -masm=intel "t.c" -o "t.asm"
+assembling:   C:\FREEBASIC\X64\bin\win64\as.exe --64 --strip-local-absolute "t.asm" -o "t.o"
+linking:      C:\FREEBASIC\X64\bin\win64\ld.exe -m i386pep -o "C:\FREEBASIC\PROJECTS\BASTOOL\source\t.exe" -subsystem console "C:\FREEBASIC\X64\lib\win64\fbextra.x" --stack 1048576,1048576 -s -L "C:\FREEBASIC\X64\lib\win64" -L "." "C:\FREEBASIC\X64\lib\win64\crt2.o" "C:\FREEBASIC\X64\lib\win64\crtbegin.o" "C:\FREEBASIC\X64\lib\win64\fbrt0.o" "t.o" "-(" -ladvapi32 -lfb -lgcc -lmsvcrt -lkernel32 -luser32 -lmingw32 -lmingwex -lmoldname "-)" "C:\FREEBASIC\X64\lib\win64\crtend.o" 
+
+
+link : Ok 
+
+   Size :   262 144 bytes
+
+
+   File created  : 
+            C:\FREEBASIC\PROJECTS\BASTOOL\source\t.exe     
+

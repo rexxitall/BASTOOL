@@ -1,0 +1,65 @@
+Distribution file list and directory structure
+Copyright (c) 2002-2005 by Christopher Heng. All rights reserved.
+-----------------------------------------------------------------
+
+$Id: filelist.txt,v 1.4 2005/03/15 14:53:56 chris Exp $
+
+
+# Main directory
+
+	todos.exe	precompiled Win32 console application
+	fromdos.exe	precompiled Win32 console application
+	
+	readme.txt	Read this file first
+	filelist.txt	You're currently reading this file
+	tofrodos.html	Tofrodos manual (HTML)
+	tofrodos.lsm	Brief information about tofrodos (for
+			the Linux Software Map)
+
+
+# source code and makefiles
+
+src\
+
+	config.h	Change variables here if you're porting tofrodos
+	emsg.c		Error message logging and display function
+	emsg.h		Error messages header
+	tofrodos.h	Main header
+	utility.h	Utility functions header
+	version.h	Version number header
+	utility.c	Utility functions
+	tofrodos.c	Main program and functions
+	init.c		Initialization functions
+
+	fromdos.1	Linux/Unix man page for tofrodos
+
+	# Makefiles for other MSDOS/Windows compilers
+	
+	makefile.bc	Borland C++ 4.5x/5.0x Makefile
+	makefile.dj2	DJGPP 2.X Makefile
+	makefile.dm	Digital Mars Makefile
+	makefile.lcc	LCC-Win32 Makefile
+	makefile.min	MinGW Makefile
+	makefile.wcc	Watcom Makefile
+	makefile.vs7	Visual Studio .NET 2003 makefile
+	
+	# Makefiles for Linux
+	
+	Makefile		Linux makefile
+	makefile.gcc	Duplicate of Makefile
+	
+# Miscellaneous source files (for MSDOS/Windows compilation)
+
+src\lib\
+
+	mktemp.c	mktemp() for deficient systems
+	mktemp.h
+	getopt.c	getopt() for deficient systems
+	getopt.h
+
+
+# Empty Directories for "make" to use for various platforms/targets
+
+src\bin
+
+src\lib\bin

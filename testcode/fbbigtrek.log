@@ -1,0 +1,25 @@
+Warning :  option -g  for debugg !! 
+
+"C:\FREEBASIC\X64\fbc.exe" -x "C:\FREEBASIC\PROJECTS\BASTOOL\testcode\fbbigtrek.exe" -s console -v -g fbbigtrek.bas > fbbigtrek.log 2>&1
+
+
+FreeBASIC Compiler - Version 1.08.0 (2020-05-04), built for win64 (64bit)
+Copyright (C) 2004-2019 The FreeBASIC development team.
+standalone
+target:       win64, x86-64, 64bit
+backend:      gcc
+compiling:    fbbigtrek.bas -o fbbigtrek.c (main module)
+fbbigtrek.bas(20) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'B2_r' in 'REDIM  SHARED          B2_r!(10)     'AS  SINGLE :REM B2('
+fbbigtrek.bas(21) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'B3_r' in 'REDIM  SHARED          B3_r!(10)     'AS  SINGLE :REM B3('
+fbbigtrek.bas(32) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C1_r' in 'REDIM  SHARED          C1_r!(10)     'AS  SINGLE :REM C1('
+fbbigtrek.bas(33) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C2_r' in 'REDIM  SHARED          C2_r!(10)     'AS  SINGLE :REM C2('
+fbbigtrek.bas(34) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C2_s' in 'REDIM  SHARED          C2_s$(10)     'AS  STRING :REM C2$('
+fbbigtrek.bas(37) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C5_r' in 'REDIM  SHARED          C5_r!(10)     'AS  SINGLE :REM C5('
+fbbigtrek.bas(39) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C6_r' in 'REDIM  SHARED          C6_r!(10)     'AS  SINGLE :REM C6('
+fbbigtrek.bas(42) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'C_s' in 'REDIM  SHARED          C_s$(10)      'AS  STRING :REM C$('
+fbbigtrek.bas(48) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'D4_r' in 'REDIM  SHARED          D4_r!(10)     'AS  SINGLE :REM D4('
+fbbigtrek.bas(53) error 148: Suffixes are only valid in -lang deprecated or fblite or qb, found 'D9_r' in 'REDIM  SHARED          D9_r!(10)     'AS  SINGLE :REM D9('
+fbbigtrek.bas(53) error 133: Too many errors, exiting
+
+
+   Compile/link Error

@@ -1,0 +1,43 @@
+"C:\FREEBASIC\X64\fbc.exe" -x "C:\FREEBASIC\PROJECTS\BASTOOL\source\startrek.exe" -s console -v startrek.bas > startrek.log 2>&1
+
+
+FreeBASIC Compiler - Version 1.08.0 (2020-05-04), built for win64 (64bit)
+Copyright (C) 2004-2019 The FreeBASIC development team.
+standalone
+target:       win64, x86-64, 64bit
+backend:      gcc
+compiling:    startrek.bas -o startrek.c (main module)
+startrek.bas(10) error 73: Array access, index expected, before '='
+10 DIM S2(8, 8): Q$ = "?"
+                    ^
+startrek.bas(20) error 10: Expected '=', found 'FNA'
+28 DEF FNA (X) = INT(8 * RND(X)) + 1: DEF FNB (X) = INT(10 * RND(X)) + 1
+       ^
+startrek.bas(20) error 10: Expected '=', found 'FNB'
+28 DEF FNA (X) = INT(8 * RND(X)) + 1: DEF FNB (X) = INT(10 * RND(X)) + 1
+                                          ^
+startrek.bas(21) error 10: Expected '=', found 'FND'
+29 DEF FND (X) = X / 60
+       ^
+startrek.bas(22) error 10: Expected '=', found 'FNR'
+30 DEF FNR (X) = INT(X * 10 + .5) / 10: DEF FNS (X) = INT(X * 100 + .5) / 100
+       ^
+startrek.bas(22) error 10: Expected '=', found 'FNS'
+30 DEF FNR (X) = INT(X * 10 + .5) / 10: DEF FNS (X) = INT(X * 100 + .5) / 100
+                                            ^
+startrek.bas(24) error 72: Array not dimensioned, before '('
+43 FOR I = 1 TO 3: READ T$(I): NEXT: FOR I = 1 TO 4: READ S$(I): NEXT: FOR I = 1 TO 6
+                           ^
+startrek.bas(24) error 72: Array not dimensioned, before '('
+43 FOR I = 1 TO 3: READ T$(I): NEXT: FOR I = 1 TO 4: READ S$(I): NEXT: FOR I = 1 TO 6
+                                                             ^
+startrek.bas(25) error 72: Array not dimensioned, before '('
+44 READ C2$(I): NEXT: FOR I = 1 TO 16: READ G1$(I): NEXT: FOR I = 1 TO 9: READ C5(I): NEXT
+            ^
+startrek.bas(25) error 72: Array not dimensioned, before '('
+44 READ C2$(I): NEXT: FOR I = 1 TO 16: READ G1$(I): NEXT: FOR I = 1 TO 9: READ C5(I): NEXT
+                                                                                  ^
+startrek.bas(25) error 133: Too many errors, exiting
+
+
+   Compile/link Error

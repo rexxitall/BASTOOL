@@ -1,0 +1,854 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.2  (Linux)">
+	<META NAME="CREATED" CONTENT="20071010;20521000">
+	<META NAME="CHANGED" CONTENT="20071011;14070600">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-left: 2.5cm; margin-right: 0.7cm; margin-top: 1.4cm; margin-bottom: 1.4cm }
+		P { margin-left: 0.5cm; margin-bottom: 0.21cm; widows: 2; orphans: 2; page-break-before: auto; page-break-after: avoid }
+		P.cjk { font-size: 10pt }
+		H1 { margin-top: 0.1cm; margin-bottom: 0.21cm; widows: 2; orphans: 2; page-break-before: auto }
+		H1.western { font-family: "Bitstream Vera Sans", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Bitstream Vera Sans"; font-size: 16pt }
+		H1.ctl { font-family: "Bitstream Vera Sans"; font-size: 16pt }
+		H2 { margin-left: 0.2cm; margin-top: 0.1cm; margin-bottom: 0.21cm; widows: 2; orphans: 2; page-break-before: auto }
+		H2.western { font-family: "Bitstream Vera Sans", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" DIR="LTR">
+<DIV TYPE=HEADER>
+	<P STYLE="margin-bottom: 0.5cm"><BR>
+	</P>
+</DIV>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT SIZE=6 STYLE="font-size: 26pt"><B>BASTOOL</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">A BASIC
+PORTING SWISSKNIFE TOOL</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Marked Fool"><FONT SIZE=7 STYLE="font-size: 40pt">BETA</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"> <FONT FACE="Impact, sans-serif">DONT
+USE IT FOR PRODUCTION WORK</FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Impact, sans-serif">THE
+PROGRAM IS DELIVERED WITHOUT WARRENTY</FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Impact, sans-serif"><FONT FACE="Impact, sans-serif">USE
+IT ON YOUR OWN RISK</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Impact, sans-serif"><FONT FACE="Impact, sans-serif">DONT
+REDISTRIBUTE WITHOUT THIS TEXT</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Impact, sans-serif">ALL
+RIGHTS RESERVED</FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">  <FONT FACE="Impact, sans-serif"><FONT SIZE=5 STYLE="font-size: 20pt">MAKE
+A BACKUP OF THE CODE YOU WILL PROCESS FIRST !</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=1 STYLE="font-size: 8pt">All
+trademarks and names in this text may copyrighted by their owners and
+they are only noticed for historical reasons or as reference, i've
+nothing to do with them.</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<DIV ID="Inhaltsverzeichnis1" DIR="LTR">
+	<DIV ID="Inhaltsverzeichnis1_Head" DIR="LTR">
+		<P STYLE="margin-left: 0cm; margin-top: 0.42cm"><FONT FACE="Bitstream Vera Sans, sans-serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Table
+		of Content</B></FONT></FONT></P>
+	</DIV>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">Hello and welcome to
+	bastool	3</P>
+	<P STYLE="margin-bottom: 0cm">What it does:	3</P>
+	<P STYLE="margin-bottom: 0cm">What it NOT does:	4</P>
+	<P STYLE="margin-bottom: 0cm">Planned features:	4</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">INSTALLATION	5</P>
+	<P STYLE="margin-bottom: 0cm">A note to the words files	5</P>
+	<P STYLE="margin-bottom: 0cm">Bug reports 	5</P>
+	<P STYLE="margin-bottom: 0cm">Algorithm	6</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">HOW TO WORK WITH	6</P>
+	<P STYLE="margin-bottom: 0cm">Old code:	6</P>
+	<P STYLE="margin-bottom: 0cm">Labels:	6</P>
+	<P STYLE="margin-bottom: 0cm">Ident:	7</P>
+	<P STYLE="margin-bottom: 0cm">EndIf:	7</P>
+	<P STYLE="margin-bottom: 0cm">Var:	7</P>
+	<P STYLE="margin-bottom: 0cm">Reserved Words:	8</P>
+	<P STYLE="margin-bottom: 0cm">Braces:	8</P>
+	<P STYLE="margin-bottom: 0cm">General:	8</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">Hints	8</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">Code	9</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">Credits	9</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">Some Words about
+	Basic in General	10</P>
+	<P STYLE="margin-bottom: 0cm">(Prelude)	10</P>
+	<P STYLE="margin-bottom: 0cm">Other Basic	11</P>
+	<P STYLE="margin-left: 0cm; margin-bottom: 0cm">APPENDIX 	12</P>
+</DIV>
+<H1 CLASS="western"></H1>
+<H1 CLASS="western" STYLE="page-break-before: always">Hello and
+welcome to bastool</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm">bastool ins mainigly
+intend to help you port old or stonehenge old basic programs to free
+basic or to a other more modern basic dialect. Usually you has only
+to change a few lines in the old code</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">most of them will be 
+errors...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">What it does:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It works on correct
+clean GW-BASIC styled source. It currently makes some nice syntax
+highlighting, trys to detect variable definitions and makes some code
+indentations. (if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It renames numeric
+labels to non numric ones (if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It detects used and
+unused Labels,clean up the code (just a bit), split up lines</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It insert „end if“
+statements (if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It gives braces a
+colorful meaning of the owner, trys to repair broken string, and
+broken print statements (if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It trys to rewrite „def
+fn“ statemenst on a primitive manner 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">							(you has too
+look at the new code !!! )</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will renumber your
+code also if line numbers are not always be present. (if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It makes cross
+reference tables for variables, jump labels, used reserved words</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(if you whish)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will make a list
+with the used strings so you can simply do a localisation of your
+program (if you whish).</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">What it NOT does:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Bastool is not a press
+a button, i will suggest you – that i do it all, tool.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will not handles big
+files 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">			(you have to
+redefine the dim statements if you has a need for)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will not handles all
+crippled code (SHARP Basic), even if i work on some of these things.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will not make
+perfect results on every „stonenge old“ Basic</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">I doesnt cares about
+all forbidden or obsolete Words – you can enhanced it by modifying
+the word files.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">							(it always try
+to do its best but...)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will no redesign the
+whole program after consulting your marketing experts,</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">optimise and pollish it
+or correct failures.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It works not on all
+freebasic source because multiline comments are not handled correctly
+(<I>If bastools code looks like a real beauty, then i will have done
+this ;)</I></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">And of course it will
+not allways work completely correct ;)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Planned features:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">detokenize old gw basic
+code  (most parts are prepared for that right now)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">full commandline
+interface for all possible settings</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">work on any or more
+basic... ()</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">reduce memory
+consumption</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">code cleanup</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">printing output</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">code linebreak</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">code to html</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">handling libs</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">write out and reinsert
+vars and strings</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">read kate syntax files</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">write kate syntax files</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western"></H1>
+<H1 CLASS="western"></H1>
+<H1 CLASS="western">INSTALLATION</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Simply put the source
+in a subdirectory.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">If you are working
+under dos you might have to use the distributed „carriage 
+linefeed“ tools to put the needed CR+LF in the code.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Bastool also needs a
+subdirectory which contains the reserved word files</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(its hardcodet at the
+moment)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Compile it now with the
+freebasic compiler</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Andale Mono">fbc
+-exx bastool.bas</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Run it, Help will given
+on run.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">A note to the words files</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Each line contains a
+reserved word without spaces in front or end,</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">they might be unsorted
+or contain double entrys</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(bastool will optimize
+them internally)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">if you want to help me
+for the next version send me your words files it would be great if
+you mark functions with a &quot;(&quot; at  the end of the word and
+put a type as text word.  So it could look like:</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Andale Mono">left$(
+string</FONT></P>
+<P CLASS="western" STYLE="margin-left: 0cm; margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-left: 0cm; margin-bottom: 0cm">
+thx in advance</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Bug reports 
+</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">They are wellcome. but
+please be kind and fix the code first in the original source. (It is
+not made for doing error corrections in the source). It should be
+able to run in gw or qbasic at least. If you report a bug please ship
+the bug with the file you would like to have converted. And be a bit
+patient pease. I do this as a spare time project, i doesnt get any
+money for this ;)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western"></H2>
+<H2 CLASS="western" STYLE="page-break-before: always">Algorithm</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Very simple ;) it looks
+for the reserved words of the originally used basic interpreter /
+compiler. All things which are not a special char or a reserved word</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">must be a variable
+identifyer or  a label.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Then it does some magic
+with renumbering etc. and care for the words which are used by the
+TARGET interpreter or compiler to avoid conflicts</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western">HOW TO WORK WITH</H1>
+<H2 CLASS="western">Old code:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">In the early years the
+computer memory was expensive and restricted. My first computer has
+had 7802 Basic bytes free (or so) for the code and and the datas.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">So the goal for the
+basic developers at that times was to save memory. So strings where
+not closed at the end, space signs was left out and more just to get
+some extra bytes. Another commob pitfall are jumpmarks which not
+match a real existing line number.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(The code has worked
+cause the interpreter used the next line bevore the missed mark)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">I suggest to fix this
+in the original source first. Bastool will help to find those
+miracles and its always a good thing to have valid code.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Labels:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The renamed labels are
+ready for simple renaming later (by hand) to a</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">more meaningful name.
+Thats why they contain some extra chars. A Label „10“ would be
+otherwise replaced in a „for next“ loop...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Unused labels can also
+be simple removed later by a single replace with a regular
+expression. (you can also drop those labels). Sometimes it is useful
+to let those labels in your code. For example if your code jumps to
+not existing labels</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The labels are named in
+a manner that you can see in a normal editor</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">how they are used in
+the code.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Used marks starts with
+L_ (Goto, Then etc. Jump)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">If they are a jump mark
+from a „gosub“ then they starts</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">with SUB_ this will
+override the „goto“ label mark, it should give you a hint to make
+a „sub“ statement from such a block.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Normal labels will
+start with &quot;l&quot; to make them different from normal numbers</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">and labels which starts
+with &quot;n&quot; indicate that they are created by a bastool line
+split.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western"></H2>
+<H2 CLASS="western" STYLE="page-break-before: always">Ident:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Often old code contains
+never fixed bugs. So if the indent doesnt go back to the starting
+(zero) something in the code usually has to be reworked.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">it will not fix this !
+(would you give some extra lessions in debugging)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">For example: In
+freebasic it's forbiden to do such things like</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">if i=67 then next. 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The indent will give
+you a hint where this is broken.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The error is always
+located bevore the hint !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">EndIf:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">This switch is ment for
+old code which only contains single line</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">„if“ statements,
+the switch is useful if you want to break up the code</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">by the &quot;:&quot;
+chars.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">If you are for example
+on turbo basic or</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">powerbasic which
+already contains such stetments</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">turn this off.
+Otherwise you will get some &quot;endifs&quot; for free ;)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Var:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Bastool looks for the
+USED vars by „peek“, „input“, „read“, the „equal sign“
+etc. So if a variable never got a value, then this variable will not
+noticed as a variable and not be renamed. If that happens you has
+found a bug in the old code usually.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">It will need deeper
+investigation, thats why bastool will not fix it !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Your compiler will show
+you this disaster with a nice line numbers. A short remark - its much
+harder to debug a potentielly working source then a real broken
+ones...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Herman has ask why i do
+such a variable renaming. Well its simple to understand. My goal is
+to port old code to a modern basic. Freebasic doesnt allow vars with
+the type chars (!$%#) at the end if you end the qbasic compatibility
+mode.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">So there will be no
+hint in the code of which type a var was made in the beginning. All
+vars in freebasic mode also have to be declared explicit. Vars with
+the same name as Array names are forbidden. (A$ will produce a error
+with A$(n) ). Usually you have to rename nearly all of them and also
+to produce the „Dim“ statements. Its hard to make the renaming by
+hand without getting errors in the code. (Especially if you are not
+the author of the source.)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">I am here dealing with
+some engineering source. A failure there will break this source, and
+a 3000 lines stress calculatio program isnt as easy to debug as &quot;hunt
+the wumpus&quot; ...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western"></H2>
+<H2 CLASS="western" STYLE="page-break-before: always">Reserved Words:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">You will see that
+bastool arrange spaces around every known reserved word (wordfile
+content) or symbol (symbolfile content)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Thats made for two
+reasons.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">First it makes the code
+more easy to read. (Well not as urgent for some ;) )</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">But second, you are now
+able to replace Reserved words by</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">a simple search and
+replace. Maybee if the old basic requires</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">ARCTAN and you has to
+use the freebasic ATAN function.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">So search simply for &quot;
+ARCTAN &quot; with spaces and replace them</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">Braces:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Bastool will replace
+every &quot;(&quot; with &quot; ( &quot; same as bevore with the
+reserved words.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Some Interpreters or
+Compilers will fail with that cause the &quot;(&quot; has to be glued</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">directly to the
+function or var. Just do a replacement in your favorite editor</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Search for &quot; (&quot;
+and replace it with &quot;(&quot; and you are done :)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Bastool also shows you
+braces in different colors (in the console output)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Mathematical needed
+ones will be shown as white ones logical ones a red ones, Array ones
+in magenta and those needed by a reserved word will appear in blue
+and so on...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">This is made for
+curious engineers who has the whish to see a mathematical rule in the
+code. (its also useful for a later revision of bastool ...)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">General:</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">In fact im happy if i
+can fix things in the old source first. There is a lot of old code
+laying in the net which has bugs, and these bugs are sittin in the
+code since (over) 20 ? or more years. Never found by lazy
+interpreters or programmers (fat grin). 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><B>I can not stress
+this enough - its better to fix original source bugs first !</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western">Hints</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm">You can rediret the
+output to a file, the console color is only shown on he console</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">so you could gives the
+dumped file directly a try with freebasic. On this way bastool should
+be also able to get invoked by a marked region in kate...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Most of the Reserved
+Words can be changed in the words.txt file</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">but things like „IF“,
+„THEN“, „FOR“, „NEXT“, „DO“, „LOOP“ ect. are
+hardcoded</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">right now</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western">Code</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm">As you will see in the
+code, this is work progress. Usually it will do most of the job but
+currently not always perfect. And some parts are a bit strange at
+this stage :-“ Im finish if bastool can clean up its own code !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(BTW: usability is a
+unknown word at this point even if i put work on it)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">it is currently also
+only tested in a LINUX Environment</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">dont cry for a dos or
+Windows version you can compile them byself. Bastool works OS
+independing (Maybee you has to replace the few „/“ chars in the
+file loading section by „\“ ones and also to put CR+LF in the
+code, but toold for that are shipped with bastool)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">I also never trys
+bastool in dos - for my opinion are over 20 years of 64k limits
+enough !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Comments, suggestions,
+gifts, postcards,</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">beer and MONEY *rofl*
+(whats that ?) are always welcome ;)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western">Credits</H1>
+<P CLASS="western"><BR><BR>
+</P>
+<P CLASS="western">Thanks to Herman Wigman for help on debugging
+Bas2txt and some hints and comments and giving me the code for
+gw2qbas which wasnt used but a help</P>
+<P CLASS="western">you can run both tools together. Herman will
+eliminate</P>
+<P CLASS="western">a lot of ugly code (goto). You can use Bastool
+bevore and after but dont use var replacing and label replacing
+bevore you use hermans gw2qbas.</P>
+<P CLASS="western">Bastool will be a help, if you got a mix of
+gwbasic and qbasic gw2bas needs urgend line numbers at the moment and
+bastool will make them. After gw2bas you can do all the optimizing
+things for freebasic</P>
+<P CLASS="western"><BR><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Ebben Feagan for fixing
+Freebasic to make the code from Herman compile.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Dipl.-Ing. Bernhard
+Falter, Dipl.-Ing. Martin Dietz who wrote a stress calculating system
+in GW – Qbasic which gaves the intention to do this work.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">All the Peoples around
+the FreeBasic Compiler, and all the peoples who does the other
+Compiler and Interpreters ive had the joy to play with :)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">And last but not least
+all the brave who host the old source to save</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">some social and
+cultural history. It was fun to make some games work.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(:-&quot;)</P>
+<H1 CLASS="western">Some Words about Basic in General</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H2 CLASS="western">(Prelude)</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Why this programm which
+looks obsolete by all these big developement environments you can
+download or buy...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Well this can becomes
+in mind but if you like old computers or if the code you has was
+known as very well tested and bugfree but runs oly on old computers
+with their build in interpreter..., or if the basic software they
+have used doenst run on your favorite operating system. THEN...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Another reason might be
+that you are frustrated by all the hussle around &quot;modern&quot;
+programming languages. Ive started programming over 20 years ago, 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">i was late at that time
+- i bought my first computer as i was 19 ...</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">After 20 years i was
+forced to do this thing again in Basic, cause it was written in
+Basic, it runs fine, was well tested and very complicate. It would be
+take much more time to port it to another language and much more time
+to check all things out then to write bastool.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">So i am back and was
+wondering again how simple things can be done and i remember the time
+as i was a young boy with a sharp pocket computer in his hands (later
+with the C128 and the Amiga ...) All this computers where shipped
+with a book titled: &quot;BASIC REFERENCE MANUAL&quot;</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT COLOR="#0000ff">BASIC...
+Beginers All Symbolic Instruction Code</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Programming isnt how to
+do it in this or that language its a way of thinking - independing of
+the language. (its more a bit like zen - the japanese meditation way
+for my opinion)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">If you know one
+language you can learn another within a short time. And if you see
+that a old basic interpreter only uses a handful of instructions and
+does</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">things like a editor in
+200 lines... (from scratch)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Today you got a 500 MB
+monster of a Basic from a big Company for free. It takes longer to
+read the documentation and to instal all things then to write
+something useful by hand. 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The boss of the same
+company has started with a basic interpreterfor the altair later for
+Aplle... (done in some k of assembly) *smile*</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">I wrote this cause ive
+seen things which grew to 3 megabytes and the same thing was done
+with 4k 20 years ago. A good example was PONG you know the simple
+game with the two paddles. Done in 4 k in a lot of languages. It
+wasSOLD as a PLAYSTATION GAME for 100 bucks on CD last year *rofl*</P>
+<H2 CLASS="western">Other Basic</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">You can get Basic
+interpreter and Compiler for free. Most of the Veterans from dos are
+now abandonware and can be downloaded without charge. They run fine
+in a dos emulation, i use dosemu for example (of course with the dos
+memory limitations)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">You will also get
+modern interpreter or compilers for free.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Some runs under
+different OS, especially Small Basic does it.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Even if its a bit hard
+to install Small Basic under Linux - it runs same code also</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">on a Palm or your
+Cellphone - no joke !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">The IDE is simple and
+it knows a lot of modern construts too. So its a good start point for
+beginners.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Blassic and YABASIC are
+fine interpreters which are worth a look Freebasic has the advantage
+to be nearly a QBASIC GWBASIC clone. (Thats why i use it at the
+moment and while it has a nice documentation)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Gambas will be nice if
+you would like to deal with things like you would do in Visual Basic.
+Mono will do .NET things And of course there are also Basic tools you
+may buy „Pure Basic“, „K Basic“ and others.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Just a look over the
+table: IBM has put their great REXX Environment to the open Source
+community. Its really worth a try if you wont care anymore about
+variables and the syntax is very near to basic.</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">(its the most simple
+powerful well designed ROBUST language i know)</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=1 STYLE="font-size: 8pt">The
+pearl php python ruby xyz guys will say same about their languages</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=1 STYLE="font-size: 8pt">(of
+course *laugh*)</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">So aside all us serious
+work :</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Lets blast some alien
+slime, hunt the wumpus, use the force</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">and make a nice klingon
+barbecue !</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">									Have fun
+Thomas</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="western" STYLE="page-break-before: always">APPENDIX 
+</H1>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">USAGE</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">bastool
+SWITCHES &lt;file.bas&gt;</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">             <FONT FACE="Lucida Sans Typewriter, monospace">(last
+commandline word is the always the source file)</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">EXAMPLE</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">bastool
+wumpus.bas</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">bastool
+-color 1 startrek.bas</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">bastool
+-split 1 -crossref 1 eliza.bas &gt; elizanew.bas</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm">            <FONT FACE="Lucida Sans Typewriter, monospace">(last
+example shows how to write the output to a file)</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">COMMANDLINE
+SWITCHES:</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-bft
+         &lt;bool&gt;   turn on brute force tokenizee</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-renum
+       &lt;bool&gt;   turn on renumbering</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-delta
+      &lt;value&gt;   renumbering steps</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-split
+       &lt;bool&gt;   split lines by :</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-indent
+     &lt;value&gt;   spaces used for ident</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-varren
+      &lt;bool&gt;   rename variables</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-vardump
+     &lt;bool&gt;   dump vars with redim statements</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-labren
+      &lt;bool&gt;   rename labels to nonnumeric if numeric</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-labdrop
+     &lt;bool&gt;   remove unused labels</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-color
+       &lt;bool&gt;   syntax highlighting</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-repprint
+    &lt;bool&gt;   repair print statements</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-insendif
+    &lt;bool&gt;   make endif statements</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-colortable
+  &lt;bool&gt;   print a small color table</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-dbgindent
+   &lt;bool&gt;   print ident level in front of code</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-strarray
+    &lt;bool&gt;   put used strings in a array</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-crossref
+    &lt;bool&gt;   do cross referencing</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-debug
+       &lt;bool&gt;   debug output</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-listfrom
+   &lt;value&gt;   list code beginning from line</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">-listto
+     &lt;value&gt;   sop codelisting by line</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">&lt;bool&gt;
+means boolean 0=(off/false) or 1=(on/true)</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Lucida Sans Typewriter, monospace">&lt;value&gt;
+means a integer number 0 or bigger</FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<DIV TYPE=FOOTER>
+	<P STYLE="margin-top: 0.5cm; margin-bottom: 0cm"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>

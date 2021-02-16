@@ -1,0 +1,24 @@
+Begin3
+Title:          tofrodos
+Version:        1.7.6
+Entered-date:   15MAR05
+Description:    DOS text files traditionally have CR/LF (carriage return
+		and line feed) pairs as their new line delimiters while
+		Unix text files traditionally have LFs (line feeds) to
+		terminate each line.
+		tofrodos comprises two programs, "fromdos" and "todos",
+		which convert text files to and from these formats.
+		Comes with source code and prebuilt binaries for Linux,
+		Win32 and DOS.
+Keywords:       todos, fromdos, unix2dos, dos2unix, text file, line feed,
+		linefeed, newline, carriage return, CR, LF, conversion,
+		convert, tofrodos, dostounix, unixtodos, dtou, utod, msdos,
+		dos, DOS
+Author:         Christopher Heng
+Maintained-by:  
+Primary-site:   http://www.thefreecountry.com/
+Original-site:  
+Platforms:      Linux, MSDOS, Win32
+Copying-policy: GNU GPL
+End
+

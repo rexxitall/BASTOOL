@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="FreeBASIC" version="0.26" kateversion="2.3" section="Sources" extensions="*.bas;*.bi;*.gw;*.qb;*.BAS;*.BI;*.GW;*.QB;" mimetype="text/x-freebasic" author="V0.14Chris Neugebauer (chrisjrn@gmail.com),V0.20 Thomas Ludewig (rexxitall@gmx.de)" license="GPL">
+  <highlighting>
+    <list name="preproc">
+      <item> #DEFINE </item>
+      <item> #ELSE </item>
+      <item> #ELSEIF </item>
+      <item> #ENDIF </item>
+      <item> #IF </item>
+      <item> #IFDEF </item>
+      <item> #IFNDEF </item>
+      <item> #UNDEF </item>
+      <item> #PRAGMA </item>
+      <item> $DYNAMIC </item>
+      <item> $INCLIB </item>
+      <item> $INCLUDE </item>
+      <item> $STATIC </item>
+      <item> DYNAMIC </item>
+      <item> INCLUDE </item>
+      <item> OPTION </item>
+      <item> __DATE__ </item>
+      <item> __FB_ARGC__ </item>
+      <item> __FB_ARGV__ </item>
+      <item> __FB_BIGENDIAN__ </item>
+      <item> __FB_DEBUG__ </item>
+      <item> __FB_DOS__ </item>
+      <item> __FB_ERR__ </item>
+      <item> __FB_LANG__ </item>
+      <item> __FB_LINUX__ </item>
+      <item> __FB_MAIN__ </item>
+      <item> __FB_MIN_VERSION__ </item>
+      <item> __FB_MT__ </item>
+      <item> __FB_OPTION_BYVAL__ </item>
+      <item> __FB_OPTION_DYNAMIC__ </item>
+      <item> __FB_OPTION_ESCAPE__ </item>
+      <item> __FB_OPTION_EXPLICIT__ </item>
+      <item> __FB_OPTION_PRIVATE__ </item>
+      <item> __FB_OUT_DLL__ </item>
+      <item> __FB_OUT_EXE__ </item>
+      <item> __FB_OUT_LIB__ </item>
+      <item> __FB_OUT_OBJ__ </item>
+      <item> __FB_SIGNATURE__ </item>
+      <item> __FB_VERSION__ </item>
+      <item> __FB_VER_MAJOR__ </item>
+      <item> __FB_VER_MINOR__ </item>
+      <item> __FB_VER_PATCH__ </item>
+      <item> __FB_WIN32__ </item>
+      <item> __FILE_NQ__ </item>
+      <item> __FILE__ </item>
+      <item> __FUNCTION_NQ__ </item>
+      <item> __FUNCTION__ </item>
+      <item> __LINE__ </item>
+      <item> __PATH__ </item>
+      <item> __TIME__ </item>
+      <item> ENDMACRO </item>
+      <item> MACRO </item>
+      <item> ASSERT </item>
+      <item> ASSERTWARN </item>
+      <item> IFDEF </item>
+      <item> IFNDEF </item>
+      <item> INCLIB </item>
+      <item> INCLUDE </item>
+      <item> LIBPATH </item>
+      <item> PRAGMA </item>
+      <item> UNDEF </item>
+  </list>
+
+    <list name="SubsNJump">
+        <item> CALL </item>
+        <item> CONTINUE </item>
+        <item> END </item>
+        <item> ERROR </item>
+        <item> Function </item>
+        <item> Protected </item>
+        <item> RESUME </item>
+        <item> Return </item>
+        <item> STOP </item>
+        <item> Sub </item>
+
+    </list>
+
+
+    <list name="Data Types">
+        <item> BYTE </item>
+        <item> DefType </item>
+        <item> DOUBLE </item>
+        <item> INTEGER </item>
+        <item> LONGINT </item>
+        <item> LONG </item>
+        <item> SHARED </item>
+        <item> SHORT </item>
+        <item> SINGLE </item>
+        <item> STATIC </item>
+        <item> STRING </item>
+        <item> UBYTE </item>
+        <item> UINTEGER </item>
+        <item> ULONGINT </item>
+        <item> ULONG </item>
+        <item> USHORT </item>
+        <item> WSTRING </item>
+        <item> ZSTRING </item>
+    </list>
+
+
+    <list name="Slopes">
+        <item> Break </item>
+        <item> Do </item>
+        <item> Exit </item>
+        <item> For </item>
+        <item> Loop </item>
+        <item> Next </item>
+        <item> Step </item>
+        <item> To </item>
+        <item> Until </item>
+        <item> Wend </item>
+        <item> While </item>
+     </list>
+
+
+     <list name="Branches">
+         <item> AND </item>
+         <item> Case </item>
+         <item> Default </item>
+         <item> ElseIf </item>
+         <item> Else </item>
+         <item> Endif </item>
+         <item> Endif </item>
+         <item> EndSelect </item>
+         <item> EQV </item>
+         <item> If </item>
+         <item> IMP </item>
+         <item> NOT </item>
+         <item> OR </item>
+         <item> Select </item>
+         <item> SHL </item>
+         <item> SHR </item>
+         <item> Then </item>
+         <item> XOR </item>
+     </list>
+
+
+     <list name="Assembly Operators">
+         <item> AH </item>
+         <item> AL </item>
+         <item> AX </item>
+         <item> BH </item>
+         <item> BL </item>
+         <item> BP </item>
+         <item> BX </item>
+         <item> CH </item>
+         <item> CL </item>
+         <item> CS </item>
+         <item> CX </item>
+         <item> DH </item>
+         <item> DI </item>
+         <item> DL </item>
+         <item> DS </item>
+         <item> DX </item>
+         <item> EAX </item>
+         <item> EBP </item>
+         <item> EBX </item>
+         <item> ECX </item>
+         <item> EDI </item>
+         <item> EDX </item>
+         <item> ES </item>
+         <item> ESI </item>
+         <item> ESP </item>
+         <item> FS </item>
+         <item> GS </item>
+         <item> SI </item>
+         <item> SP </item>
+         <item> SS </item>
+         <item> ASM </item>
+
+     </list>
+
+
+     <list name="FBConly">  <!-- OK only in non qb mode ...-->
+       <item>CLASS</item>
+       <item>CONSTRUCTOR</item>
+       <item>DELETE</item>
+       <item>DESTRUCTOR</item>
+       <item>EXPORT</item>
+       <item>IMPORT</item>
+       <item>NAMESPACE</item>
+       <item>NEW</item>
+       <item>OPERATOR</item>
+       <item>OVERLOAD</item>
+       <item>PRIVATE</item>
+       <item>PROCPTR</item>
+       <item>PROPERTY</item>
+       <item>PROTECTED</item>
+       <item>PUBLIC</item>
+       <item>VAR</item>
+   </list>
+
+
+     <list name="keywords"> <!-- procedures are also ment...-->
+      <item> ACCESS </item>
+      <item> ADD </item>
+      <item> ALIAS </item>
+      <item> ALPHA </item>
+      <item> ANY </item>
+      <item> AS </item>
+      <item> APPEND </item>
+      <item> BASE </item>
+      <item> BEEP </item>
+      <item> Binary </item>
+      <item> BINARY </item>
+      <item> BLOAD </item>
+      <item> BSAVE </item>
+      <item> BYREF </item>
+
+      <item> CALLS </item>
+      <item> CDECL </item>
+      <item> CHAIN </item>
+      <item> CHDIR </item>
+      <item> CIRCLE </item>
+      <item> CLEAR </item>
+      <item> CLOSE </item>
+      <item> CLS </item>
+      <item> COM </item>
+
+      <item> COMMON </item>
+      <item> CONDBROADCAST </item>
+      <item> CONDDESTROY </item>
+      <item> CONDSIGNAL </item>
+      <item> CONDWAIT </item>
+      <item> CONS </item>
+      <item> CONST </item>
+      <item> Data </item>
+      <item> DEALLOCATE </item>
+      <item> Declare </item>
+      <item> DEFBYTE </item>
+      <item> DEFDBL </item>
+      <item> DEFINED </item>
+      <item> DEFINT </item>
+      <item> DEFLNG </item>
+      <item> DEFLONGINT </item>
+      <item> DEFSHORT </item>
+      <item> DEFSNG </item>
+      <item> DEFSTR </item>
+      <item> DEFUBYTE </item>
+      <item> DEFUINT </item>
+      <item> DEFULNG </item>
+      <item> DEFULONGINT </item>
+      <item> DEFUSHORT </item>
+      <item> DIM </item>
+      <item> DRAW </item>
+      <item> DRAW STRING </item>
+      <item> DYLIBFREE </item>
+      <item> DYLIBLOAD </item>
+      <item> ENCODING </item>
+      <item> ENUM </item>
+      <item> ERASE </item>
+      <item> ERR </item>
+      <item> ESCAPE </item>
+      <item> EXPLICIT </item>
+      <item> EXTERN </item>
+      <item> FIELD </item>
+      <item> FLIP </item>
+      <item> IIF </item>
+      <item> IMAGECONVERTROW </item>
+      <item> IMAGEDESTROY </item>
+
+      <item> IS </item>
+      <item> LBOUND </item>
+      <item> LIB </item>
+      <item> LINE INPUT </item>
+      <item> LINE </item>
+      <item> LOCAL </item>
+      <item> LOCATE </item>
+      <item> LOCK </item>
+      <item> LPRINT </item>
+      <item> LPRINT USING </item>
+      <item> LPT </item>
+      <item> LSET </item>
+      <item> MUTEXDESTROY </item>
+      <item> MUTEXLOCK </item>
+      <item> NAME </item>
+      <item> ONCE </item>
+
+      <item> OUT </item>
+      <item> Output </item>
+      <item> OUTPUT </item>
+
+      <item> PAINT </item>
+      <item> PALETTE </item>
+      <item> PASCAL </item>
+      <item> PCOPY </item>
+      <item> PIPE </item>
+      <item> POINTER </item>
+      <item> POKE </item>
+      <item> PRESERVE </item>
+      <item> PRESET </item>
+      <item> PRINT </item>
+
+
+
+      <item> PSET </item>
+      <item> PTR </item>
+
+      <item> PUT </item>
+      <item> Random </item>
+      <item> RANDOM </item>
+      <item> RANDOMIZE </item>
+      <item> READ </item>
+      <item> REDIM </item>
+      <item> RESET </item>
+      <item> RESTORE </item>
+      <item> RSET </item>
+      <item> SCOPE </item>
+      <item> SCREENCONTROL </item>
+      <item> SCREENCOPY </item>
+      <item> SCREENINFO </item>
+      <item> SCREENLOCK </item>
+      <item> SCREENRES </item>
+      <item> SCREENSET </item>
+      <item> SCREENSYNC </item>
+      <item> SCREENUNLOCK </item>
+      <item> SCRN </item>
+      <item> SETDATE </item>
+      <item> SETENVIRON </item>
+      <item> SETMOUSE </item>
+      <item> SETTIME </item>
+      <item> SLEEP </item>
+      <item> STDCALL </item>
+      <item> TAB </item>
+      <item> THIS </item>
+      <item> THREADWAIT </item>
+      <item> TRANS </item>
+      <item> Type </item>
+      <item> UBOUND </item>
+      <item> UNION </item>
+      <item> USING </item>
+      <item> USING </item>
+
+      <item> VIEW </item>
+      <item> WAIT </item>
+      <item> WIDTH </item>
+      <item> WINDOW </item>
+      <item> WINDOWTITLE </item>
+      <item> WINPUT </item>
+      <item> WITH </item>
+      <item> WRITE </item>
+    </list>
+
+
+
+
+
+    <list name="functions">
+      <item> ABS </item>
+      <item> ACOS </item>
+      <item> ALLOCATE </item>
+      <item> ASCII-CODES </item>
+      <item> ASC </item>
+      <item> ASIN </item>
+      <item> ATAN2 </item>
+      <item> AT </item>
+      <item> ATN </item>
+      <item> BIN </item>
+      <item> BIN$ </item>
+
+      <item> BITFELDER </item>
+      <item> BIT </item>
+      <item> BITRESET </item>
+      <item> BITSET </item>
+      <item> BYTE </item>
+      <item> CALLOCATE </item>
+      <item> CAST </item>
+      <item> CBYTE </item>
+      <item> CDBL </item>
+      <item> CHR </item>
+      <item> CHR$ </item>
+      <item> CINT </item>
+      <item> CLNGINT </item>
+      <item> CLNG </item>
+      <item> COLOR </item>
+      <item> COMMAND </item>
+      <item> COMMAND$ </item>
+
+      <item> CONDCREATE </item>
+      <item> COS </item>
+      <item> CPTR </item>
+      <item> CSHORT </item>
+      <item> CSIGN </item>
+      <item> CSNG </item>
+      <item> CSRLIN </item>
+      <item> CUBYTE </item>
+      <item> CUINT </item>
+      <item> CULNGINT </item>
+      <item> CULNG </item>
+      <item> CUNSG </item>
+      <item> CURDIR </item>
+      <item> CURDIR$ </item>
+
+      <item> CUSHORT </item>
+      <item> CUSTO0</item>
+      <item> CVD </item>
+      <item> CVI </item>
+      <item> CVL </item>
+      <item> CVLONGINT </item>
+      <item> CVSHORT </item>
+      <item> CVS </item>
+      <item> DATEADD </item>
+      <item> DATEDIFF </item>
+      <item> DATE </item>
+      <item> DATE$ </item>
+      <item> DATEPART </item>
+      <item> DATESERIAL </item>
+      <item> DATEVALUE </item>
+      <item> DAY </item>
+      <item> DIR </item>
+      <item> DIR$ </item>
+
+      <item> DOUBLE </item>
+      <item> DYLIBSYMBOL </item>
+      <item> ENVIRON </item>
+      <item> EOF </item>
+      <item> ERFN </item>
+      <item> ERMN </item>
+      <item> EXEC </item>
+      <item> EXEPATH </item>
+      <item> EXP </item>
+      <item> FILEATTR </item>
+      <item> FILECOPY </item>
+      <item> FILEDATETIME </item>
+      <item> FILEEXISTS </item>
+      <item> FILELEN </item>
+      <item> FIX </item>
+      <item> FORMAT </item>
+      <item> FORMAT$ </item>
+
+      <item> FRAC </item>
+      <item> FREEFILE </item>
+      <item> FRE </item>
+      <item> FUNCTIONS </item>
+      <item> GET </item>
+      <item> GETJOYSTICK </item>
+      <item> GETKEY </item>
+      <item> GETMOUSE </item>
+      <item> HEX </item>
+      <item> HEX$ </item>
+      <item> HIBYTE </item>
+      <item> HIWORD </item>
+      <item> HOUR </item>
+      <item> IMAGECREATE </item>
+      <item> INKEY </item>
+      <item> INKEY$ </item>
+      <item> INP </item>
+      <item> Input </item>
+      <item> Input$ </item>
+      <item> INSTR </item>
+      <item> INT </item>
+      <item> ISDATE </item>
+      <item> KILL </item>
+      <item> LCASE </item>
+      <item> LCASE$ </item>
+
+      <item> LEFT </item>
+      <item> LEFT$ </item>
+      <item> LEN </item>
+      <item> LOBYTE </item>
+      <item> LOC </item>
+      <item> LOF </item>
+      <item> LOG </item>
+      <item> LOWORD </item>
+      <item> LPOS </item>
+      <item> LTRIM </item>
+      <item> LTRIM$ </item>
+
+      <item> MID </item>
+      <item> MID$ </item>
+      <item> MINUS </item>
+      <item> MINUTE </item>
+      <item> MKDIR </item>
+      <item> MKD </item>
+      <item> MKD$ </item>
+      <item> MKI </item>
+      <item> MKI$ </item>
+      <item> MKL </item>
+      <item> MKL$ </item>
+      <item> MKLONGINT </item>
+      <item> MKLONGINT$ </item>
+
+      <item> MKSHORT </item>
+      <item> MKSHORT$ </item>
+
+      <item> MKS </item>
+      <item> MKS$ </item>
+      <item> MOD </item>
+      <item> MONTH </item>
+      <item> MONTHNAME </item>
+      <item> MULTIKEY </item>
+      <item> MUTEXCREATE </item>
+      <item> MUTEXUNLOCK </item>
+      <item> NOW </item>
+      <item> OCT </item>
+      <item> OCT$ </item>
+      <item> OFFSETOF </item>
+      <item> OPEN CO0</item>
+      <item> OPEN </item>
+      <item> OPTION </item>
+      <item> PALETTE GET </item>
+      <item> PEEK </item>
+      <item> PLUS </item>
+      <item> PMAP </item>
+      <item> POINT </item>
+      <item> POS </item>
+      <item> REALLOCATE </item>
+      <item> RGBA </item>
+      <item> RGB </item>
+      <item> RIGHT </item>
+      <item> RIGHT$ </item>
+      <item> RMDIR </item>
+      <item> RND </item>
+      <item> RTRI0</item>
+      <item> RUN </item>
+      <item> SADD </item>
+      <item> SCREENEVENT </item>
+      <item> SCREEN </item>
+      <item> SCREENLIST </item>
+      <item> SCREENPTR </item>
+      <item> SECOND </item>
+      <item> SEEK </item>
+      <item> SGN </item>
+      <item> SHELL </item>
+      <item> SHORT </item>
+      <item> SINGLE </item>
+      <item> SIN </item>
+      <item> SIZEOF </item>
+      <item> SPACE </item>
+      <item> SPACE$ </item>
+      <item> SPC </item>
+      <item> SQR </item>
+      <item> STRING </item>
+      <item> STRING$ </item>
+      <item> STR </item>
+      <item> STR$ </item>
+      <item> STRPTR </item>
+      <item> TAN </item>
+      <item> THREADCREATE </item>
+      <item> TIME </item>
+      <item> TIME$ </item>
+      <item> TIMER </item>
+      <item> TIMESERIAL </item>
+      <item> TIMEVALUE </item>
+      <item> TRI0</item>
+      <item> TYPEOF </item>
+      <item> UCASE </item>
+      <item> UCASE$ </item>
+
+      <item> UND </item>
+      <item> UNLOCK </item>
+      <item> UNSIGNED </item>
+      <item> VA_ARG </item>
+      <item> VA_FIRST </item>
+      <item> VAL64 </item>
+      <item> VALINT </item>
+      <item> VAL </item>
+      <item> VALLNG </item>
+      <item> VALUINT </item>
+      <item> VALULNG </item>
+      <item> VA_NEXT </item>
+      <item> VARPTR </item>
+      <item> WBIN </item>
+      <item> WCHR </item>
+      <item> WCHR$ </item>
+
+      <item> WEEKDAY </item>
+      <item> WEEKDAYNAME </item>
+      <item> WHEX </item>
+      <item> WHEX$ </item>
+      <item> WOCT </item>
+      <item> WOCT$ </item>
+
+      <item> WSPACE </item>
+      <item> WSPACE$ </item>
+
+      <item> WSTR </item>
+      <item> WSTR$ </item>
+
+      <item> YEAR </item>
+    </list>
+
+
+<!-- following statements will affect the QB/GW Basic emualtion mode, this are the keywords which are not implemented -->
+    <list name="Obsolete">
+      <item> BASE </item>
+      <item> DEF </item>
+      <item> BSOLUTE </item>
+      <item> INTERRUPT </item>
+      <item> CALLS </item>
+      <item> COM </item>
+      <item> CVDMBF </item>
+      <item> CVSMBF </item>
+      <item> DEF FN</item>
+      <item> DEF SEG </item>
+      <item> ERDEV </item>
+      <item> ERDEV$ </item>
+      <item> ERL </item>
+      <item> FIELD </item>
+      <item> FILEATTR </item>
+      <item> FILES </item>
+      <item> IOCTL </item>
+      <item> IOCTL$ </item>
+      <item> KEY </item>
+      <item> KEY(n) </item>
+      <item> LIST </item>
+      <item> LPOS </item>
+      <item> LPRINT </item>
+      <item> MKDMBF$ </item>
+      <item> MKSMBF$ </item>
+      <item> OFF </item>
+      <item> COM </item>
+      <item> EVENT </item>
+      <item> KEY </item>
+      <item> PEN </item>
+      <item> PLAY </item>
+      <item> STRIG </item>
+      <item> TIMER </item>
+      <item> UEVENT </item>
+      <item> PEN </item>
+      <item> PLAY </item>
+      <item> SEG </item>
+      <item> SETMEM </item>
+      <item> SIGNAL </item>
+      <item> SOUND </item>
+      <item> STICK </item>
+      <item> STRIG </item>
+      <item> TROFF </item>
+      <item> TRON </item>
+      <item> UEVENT </item>
+      <item> VARPTR$ </item>
+      <item> VARSEG </item>
+      <item> AUTO </item>
+      <item> CONT </item>
+      <item> EDIT </item>
+      <item> LOAD </item>
+      <item> MERGE </item>
+      <item> SAVE </item>
+      <item> RENUM </item>
+      <item> MOTOR </item>
+    </list>
+
+
+    <list name="Depreciated">
+        <item> BYVAL </item>
+        <item> SYSTEM </item>
+        <item> LET </item>
+        <item> Gosub </item>
+        <item> Goto </item>
+        <item> ON </item>
+    </list>
+
+    <contexts>
+      <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
+
+
+        <RegExpr attribute="SubsNJump" context="#stay" String="^\b(\s*)?(function)([.\s]|$)" insensitive="true" beginRegion="fProcedureRegion"/>
+        <RegExpr attribute="SubsNJump" context="#stay" String="\b^(end function)([\s]|$)" insensitive="true" endRegion="fProcedureRegion"/>
+
+        <RegExpr attribute="SubsNJump" context="#stay" String="^\b(\s*)?(sub)([.\s]|$)" insensitive="true" beginRegion="sProcedureRegion"/>
+        <RegExpr attribute="SubsNJump" context="#stay" String="\b^(end sub)([\s]|$)" insensitive="true" endRegion="sProcedureRegion"/>
+
+        <RegExpr attribute="Slopes" context="#stay" String="\b^(\s*)?(do)([\s]|$)" insensitive="true" beginRegion="DoRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="\b^(loop)([\s]|$)" insensitive="true" endRegion="DoRegion"/>
+        
+        <RegExpr attribute="Slopes" context="#stay" String="\b^(\s*)?(open)([\s]|$)" insensitive="true" beginRegion="OpenRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="\b^(close)([\s]|$)" insensitive="true" endRegion="OpenRegion"/>
+        
+
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(for)([\s]|$)" insensitive="true" beginRegion="ForRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="\b(next)([\s]|$)" insensitive="true" endRegion="ForRegion"/>        
+
+        
+        <RegExpr attribute="Branches" context="#stay" String="^(\s*)?if([\s])" insensitive="true" beginRegion="IfRegion" /> 
+        <RegExpr attribute="Branches" context="#stay" String="\b(then\s+)(?!(rem|$|'))" insensitive="true" endRegion="IfRegion" />
+        <RegExpr attribute="Branches" context="#stay" String="\b((end if)|(endif))([\s]|$)" insensitive="true" endRegion="IfRegion"/>   
+        
+        
+        <RegExpr attribute="Branches" context="#stay" String="\b(\s*)?(select)([\s]|$)" insensitive="true" beginRegion="SelectRegion"/>
+        <RegExpr attribute="Branches" context="#stay" String="\b(end select)([\s]|$)" insensitive="true" endRegion="SelectRegion"/>
+        
+        
+        
+        <RegExpr attribute="Data Types" context="#stay" String="\b(type)([\s]|$)" insensitive="true" beginRegion="StructureRegion"/>
+        <RegExpr attribute="Data Types" context="#stay" String="\b(end type)([\s]|$)" insensitive="true" endRegion="StructureRegion"/>
+        
+        <RegExpr attribute="Data Types" context="#stay" String="\b(with)([\s]|$)" insensitive="true" beginRegion="WithRegion"/>
+        <RegExpr attribute="Data Types" context="#stay" String="\b(end with)([\s]|$)" insensitive="true" endRegion="WithRegion"/>
+        
+        
+        <RegExpr attribute="Assembly Operators" context="#stay" String="\b(asm)([\s]|$)" insensitive="true" beginRegion="AsmRegion"/>
+        <RegExpr attribute="Assembly Operators" context="#stay" String="\b(asm)([\s])" insensitive="true"/>
+        <RegExpr attribute="Assembly Operators" context="#stay" String="\b(end asm)([\s]|$)" insensitive="true" endRegion="AsmRegion"/>
+    
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(while)([\s]|$)" insensitive="true" beginRegion="WhileRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(wend)([\s]|$)" insensitive="true" endRegion="WhileRegion"/>
+        
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(repeat)([\s]|$)" insensitive="true" beginRegion="RepeatRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(until)([\s]|$)" insensitive="true" endRegion="RepeatRegion"/>
+        
+        
+
+       
+        <keyword attribute="preproc" context="#stay" lineEndContext="#pop" String="Preprocessor"/>
+        <keyword attribute="Functions" context="#stay" String="functions"/>
+        <keyword attribute="Keyword" context="#stay" String="keywords"/>
+        <keyword attribute="Data Types" context="#stay" String="Data Types"/>
+
+        
+        <RegExpr attribute="Branches" context="#stay" String="end\ if" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ input" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ output" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ binary" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ append" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ random" insensitive="true" />
+        <RegExpr attribute="Data Types" context="#stay" String="\b(for (input|output|binary|random))([\s]|$)" insensitive="true" />
+        <RegExpr attribute="SubsNJump" context="#stay" String="resume\ next" insensitive="true" />
+
+
+        <RegExpr attribute="Depreciated" context="#stay" String="(gosub|goto){1}\s+([0-9,A-Z,a-z,_]*,?(\s?)*)+(\:?)*" insensitive="true" />
+        <RegExpr attribute="Depreciated" context="#stay" String="\bTHEN\s+\d*\B[0-9]" insensitive="true" />
+        <RegExpr attribute="SubsNJump" context="#stay" String="^\s*[A-Z,a-z].*:{1}\ {1}\s" insensitive="true" />
+        <RegExpr attribute="SubsNJump" context="#stay" String="^\s*[A-Z,a-z].*:{1}$" insensitive="true" />
+        <RegExpr attribute="Comment"  context="#stay" String="^(\s?)*[0-9]*\s+" insensitive="true" />
+        <RegExpr attribute="Number"  context="#stay" String="\b\d+\b" insensitive="true" />
+        <AnyChar attribute="Other" context="#stay" String=";^()}{:,/[]+-*\=&lt;&gt;" />
+        <keyword attribute="Obsolete" context="#stay" String="Obsolete"/>
+        <keyword attribute="Obsolete" context="#stay" String="Obsolete"/>
+        <keyword attribute="Slopes" context="#stay" String="Slopes"/>
+        <keyword attribute="Branches" context="#stay" String="Branches"/>
+        <keyword attribute="SubsNJump" context="#stay" String="SubsNJump"/>
+        <keyword attribute="Depreciated" context="#stay" String="Depreciated"/>
+        <keyword attribute="FBConly" context="#stay" String="FBConly"/>
+      
+        
+        <RegExpr attribute="Constant" context="#stay" String="\#+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*"/>
+        <Float attribute="Number" context="#stay"/>
+
+        
+        <RegExpr attribute="Comment" context="#stay" String="REM.*" insensitive="true" />
+        <DetectChar attribute="String" context="String" char="&quot;" />
+        <DetectChar attribute="Comment" context="Comment1" char="'"/>
+        <Detect2Chars attribute="Comment" context="Comment2" char="/" char1="'" beginRegion="Region3"/>
+
+    </context>
+
+
+      
+      
+      <context attribute="String" lineEndContext="#pop" name="String">
+        <DetectChar attribute="String" context="#pop" char="&quot;"/>
+      </context>
+
+      <context attribute="Comment" lineEndContext="#pop" name="Comment1">
+        <keyword attribute="Number" context="#stay" String="attention" />
+      </context>
+
+      <context attribute="Comment" lineEndContext="#stay" name="Comment2">
+        <keyword attribute="Alert" context="#stay" String="attention" />
+        <Detect2Chars attribute="Comment" context="#pop" char="'" char1="/"   endRegion="Region3"/>
+      </context>
+
+    </contexts>
+
+    <itemDatas>
+      <itemData name="Branches"         defStyleNum="dsChar" />
+      <itemData name="Comment"          defStyleNum="dsComment"/>
+      <itemData name="Constant"         defStyleNum="dsConstant"/>
+      <itemData name="Data Types"       defStyleNum="dsDataType"/>
+      <itemData name="Depreciated"      defStyleNum="dsAlert"/>
+      <itemData name="Functions"        defStyleNum="dsFunction"/>
+      <itemData name="Keyword"          defStyleNum="dsKeyword"/>
+      <itemData name="Normal Text"      defStyleNum="dsNormal"/>
+      <itemData name="Number"           defStyleNum="dsDecVal"/>
+      <itemData name="Obsolete"         defStyleNum="dsError"/>
+      <itemData name="Other"            defStyleNum="dsOthers" />
+      <itemData name="Preprocessor"     defStyleNum="dsPreProc"/>
+      <itemData name="Region Marker "   defStyleNum="dsRegionMarker"/>
+      <itemData name="Slopes"           defStyleNum="dsOthers" />
+      <itemData name="String"           defStyleNum="dsString"/>
+      <itemData name="SubsNJump"        defStyleNum="dsFloat" />
+      <itemData name="FBConly"          defStyleNum="dsChar" />
+
+
+    </itemDatas>
+  </highlighting>
+  <general>
+    <keywords casesensitive="0" />
+    <comments>
+      <comment name="singleLine" start="'" />
+      <comment name="singleLine" start="REM " />
+      <!--comment name="remark" start="REM " /-->
+      <comment name="multiLine" start="/'" end="'/" />
+
+
+    </comments>
+  </general>
+</language>
+<!-- // kate: space-indent on; indent-width 4; replace-tabs on; -->

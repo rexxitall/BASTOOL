@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- Copyright 1996-2005 by Christopher Heng. All rights reserved. -->
+<!-- $Id: tofrodos.html,v 1.3 2005/03/14 14:18:40 chris Exp $ -->
+<title>tofrodos - Converts text files between MSDOS and Unix file formats</title>
+<style type="text/css">
+h1, h2, p { font-family: Arial, Helvetica, sans-serif ; }
+dt {
+	font-family: Arial, Helvetica, sans-serif ;
+	font-weight: bold ;
+}
+dd {
+	font-family: Arial, Helvetica, sans-serif ;
+}
+span.programname {
+	font-weight: bold ;
+}
+span.optionchar {
+	font-weight: bold ;
+}
+span.filename {
+	font-family: "Courier New", Courier, monospace ;
+}
+p.copyright {
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 90% ;
+}
+</style>
+</head>
+<body>
+
+<h1>Tofrodos - Converts text files between MSDOS and Unix file formats</h1>
+
+<h2>Synopsis</h2>
+
+<p>
+<span class="programname">fromdos</span> [options] [<span class="filename">file...</span>]<br />
+<span class="programname">todos</span> [options] [<span class="filename">file...</span>]<br />
+</p>
+
+<h2>Description</h2>
+
+<p>
+DOS text files traditionally have carriage return and line feed pairs
+as their newline characters while Unix text files have the line feed
+as their newline character. <span class="programname">fromdos</span>
+converts text files from the DOS format to the Unix format, while
+<span class="programname">todos</span>
+converts text files from the Unix format to the DOS format.
+</p>
+
+<p>
+The programs accept multiple filenames and wildcards as their arguments.
+You may also use them in a pipe.
+If either program finds its input redirected, it will process stdin
+and place the output on stdout.
+</p>
+
+<h2>Options</h2>
+
+<dl>
+<dt>-a</dt>
+<dd>
+Always convert. If converting from DOS to Unix, this option will
+cause the program to remove ALL carriage returns. The default is to
+remove carriage returns only if they are followed by line feeds.
+If converting from
+Unix to DOS, this option will cause the program to convert ALL
+linefeeds to carriage return pairs. The default is to convert linefeeds
+only if they are not already preceeded by a carriage return.
+</dd>
+<dt>-b</dt>
+<dd>
+Make a backup of original file. The original
+file is renamed with the original filename and a <span class="filename">.bak</span>
+extension.
+</dd>
+<dt>-d</dt>
+<dd>
+Convert from DOS to Unix. This forces the program to convert the file in
+a particular direction. By default, if the program is named
+<span class="programname">fromdos</span> or <span class="programname">dos2unix</span>
+it will assume that the input file is in a DOS format and convert it to
+a Unix format. If the program is named <span class="programname">todos</span> or
+<span class="programname">unix2dos</span> it will assume that the input file is in a Unix format and convert it to
+a DOS format. Using the <span class="optionchar">-d</span> option forces the program to convert from a DOS
+format to a Unix format regardless of how the program is named. Likewise, using the
+<span class="optionchar">-u</span> option forces the program to convert from a Unix format to a DOS format
+regardless of the name of the program.
+</dd>
+<dt>-e</dt>
+<dd>
+Abort processing on any error in any file. Normally, the program will
+simply skip to process the next file on the command line when it encounters
+any errors. This option causes it to abort on errors.
+</dd>
+<dt>-f</dt>
+<dd>
+Force: convert even if the file is not writeable (read-only). By default,
+if <span class="programname">fromdos</span> or <span class="programname">todos</span>
+finds that the file does not have write permission, it will not process
+that file. This option forces the conversion even if the file is read-only.
+</dd>
+<dt>-h</dt>
+<dd>
+Display a short help screen on the program usage and quit.
+</dd>
+<dt>-l &lt;logfile&gt;</dt>
+<dd>
+Log error messages to &lt;logfile&gt;. Note that if your command line has an
+error, such as when you specify an unknown option, the error message for the
+command line option error will be issued to stderr instead and not logged.
+</dd>
+<dt>-o</dt>
+<dd>
+Overwrite the original file (no backup). This is the default.
+</dd>
+<dt>-p</dt>
+<dd>
+Preserve file ownership and time. On systems like Linux, the file
+ownership will only be preserved if the user is root, otherwise it
+will just set the file time and silently fail the change of file
+ownership. If you want a warning message when the file ownership
+cannot be changed, use -v.
+</dd>
+<dt>-u</dt>
+<dd>
+Convert from Unix to DOS. See the <span class="optionchar">-d</span> option above for more information.
+</dd>
+<dt>-v</dt>
+<dd>
+Verbose.
+</dd>
+<dt>-V</dt>
+<dd>
+Show version message and quit.
+</dd>
+</dl>
+
+<h2>Author</h2>
+
+<p>
+The program and its documentation are copyrighted &copy; 1996-2005 by
+Christopher Heng. All rights reserved. They are distributed under
+the terms of the GNU General Public License Version 2.
+</p>
+
+<hr />
+
+<p class="copyright">
+Copyright &copy; 1996-2005 by Christopher Heng. All rights reserved.
+</p>
+
+</body>
+</html>

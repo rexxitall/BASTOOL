@@ -1,0 +1,47 @@
+			                        "Konwert"
+                              ChangeLog
+
+autor : Krzysztof Koz³owski
+systemy : Linux/Unix/Windows
+licencja : GPL
+
+mój email  : kozik (at) o2 . pl
+strona WWW :  http://konwert.sourceforge.net/
+
+charset : iso-8859-2
+
+------------------------------------------------------------------------------
+
+0.9 (12.06.2004)
+================
+Powstanie programu - potrzebowa³em jaki¶ szybki i ma³y program dzia³aj±cy z
+linii poleceñ do konwertowania plików tekstowych na ISO-8859-2. Dwie
+godzinki pracy i program gotowy :).
+
+
+1.0 (13.06.2004)
+=================
+ - Dodanie tego "ChangeLoga".
+ - Wypisywanie dodatkowych komunikatów o sposobie konwersji.
+ - Poprawa konwersji UNIX->DOS i odwrotnie.
+ - Dodane zabezpieczenie przed konwersj± na Unix (lub DOS) je¶li plik jest ju¿
+   w danym formacie.
+ - Naprawa zapisu do podanego przez u¿ytkownika pliku.
+
+1.0.1 (25.11.2004)
+==================
+ - Kilka kosmetycznych poprawek zwi±zanych z funkcjami strcat() i strcpy().
+
+1.0.2 (19.01.2005)
+==================
+ - Wystêpowa³ dziwny b³±d, forma przepe³nienia bufora przy alokacji miejsca dla
+   zmiennej "nazwa". Rozwi±za³em inaczej podaj±c wielko¶æ alokowanej pamiêci,
+   ale nie wiem sk±d ten b³±d.
+
+1.0.3 (30.01.2005)
+==================
+ - Poprawka potencjalnego b³êdu "format string".
+
+
+
+

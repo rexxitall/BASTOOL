@@ -1,0 +1,83 @@
+			                        "Konwert"
+                               Readme
+
+by Krzysztof Koz³owski
+Linux/Unix/Windows
+licencja: GPL
+
+mój email  : kozik (at) o2 . pl
+strona WWW :  http://www.koziol.prv.pl
+
+charset : iso-8859-2
+
+------------------------------------------------------------------------------
+
+Info
+====
+Program potrafi konwertowaæ pliki tekstowe pomiêdzy stronami kodowania
+ISO-8859-2 oraz Windows-1250. Dodatkowo mo¿e równie¿ konwertowaæ znaki koñca 
+wiersza plików (Unix i DOS).
+
+
+Kompilacja
+==========
+Program zosta³ napisany w ANSI C dla kompilatora GNU. Testowany by³ na:
+ - GCC 3.3.2, 3.4.1, Windows 2000 (DJGPP)
+ - GCC 2.95.3, Sparc
+
+1. Zmiana w pliku <Makefile> zmiennej DEF_WINDOWSY (na poprawn±).
+2. make clean
+3. make
+
+W przypadku kompilacji na systemach BSD proszê u¿yæ gmake.
+
+W katalogu "bin" znajduje siê skompilowany program dla systemu DOS/Windows.
+
+
+Prawa autorskie i takie tam :)
+==============================
+
+Konwert, program do konwersji znaków
+Copyright (C) 2004, 2005 Krzysztof Koz³owski
+
+Niniejszy program jest wolnym oprogramowaniem; mo¿esz go
+rozprowadzaæ dalej i/lub modyfikowaæ na warunkach Powszechnej
+Licencji Publicznej GNU, wydanej przez Fundacjê Wolnego
+Oprogramowania - wed³ug wersji 2-giej tej Licencji lub której¶
+z pó¼niejszych wersji.
+
+Niniejszy program rozpowszechniany jest z nadziej±, i¿ bêdzie on
+u¿yteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domy¶lnej
+gwarancji PRZYDATNO¦CI HANDLOWEJ albo PRZYDATNO¦CI DO OKRE¦LONYCH
+ZASTOSOWAÑ. W celu uzyskania bli¿szych informacji - Powszechna
+Licencja Publiczna GNU.
+
+Tekst licencji GPL znajduje siê w pliku COPYRIGHT.
+
+Z pewno¶ci± wraz z niniejszym programem otrzyma³e¶ te¿ egzemplarz
+Powszechnej Licencji Publicznej GNU (GNU General Public License);
+je¶li nie - napisz do Free Software Foundation, Inc., 675 Mass Ave,
+Cambridge, MA 02139, USA.
+
+===English version===
+
+Konwert, char convert program
+Copyright (C) 2004, 2005 Krzysztof Koz³owski
+
+
+"Konwert" for Linux is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+"Konwert" for Linux is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
+
+The license can be obtained by writing to the Free Software Foundation, Inc.,
+59 Temple Place - Suite 330, Boston, MA  02111-1307, USA, or by accessing
+http://www.gnu.org/copyleft/gpl.html.
+
+You can find GPL licence in COPYRIGHT file.
+
